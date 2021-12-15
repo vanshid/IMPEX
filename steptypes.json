@@ -1,0 +1,50 @@
+{
+    "step-types": {
+        "script-module-step": [
+            {
+                "@type-id": "custom.email",
+                "module": "app_storefront_custom/cartridge/scripts/helpers/emailHelpers.js",
+                "function": "sendMail",
+               
+                "status-codes": {
+                    "status": [
+                        {
+                            "@code": "ERROR",
+                            "description": "Used when an error occurred."
+                        },
+                        {
+                            "@code": "OK",
+                            "description": "Used when everything went well."
+                        },
+                        {
+                            "@code": "WARN",
+                            "description": "Used when small, but acceptable problems occurred."
+                        }
+                    ]
+                }
+            },
+            {
+                "@type-id": "custom.storage",
+                "module": "app_storefront_custom/cartridge/scripts/helpers/emailHelpers.js",
+                "function": "execute",
+                "status-codes": {
+                    "status": [
+                        {
+                            "@code": "ERROR",
+                            "description": "Used when an error occurred."
+                        },
+                        {
+                            "@code": "OK",
+                            "description": "Used when everything went well."
+                        },
+                        {
+                            "@code": "WARN",
+                            "description": "Used when small, but acceptable problems occurred."
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+  
